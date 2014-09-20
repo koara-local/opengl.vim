@@ -5161,6 +5161,7 @@ if !exists ("c_opengl_no_gles2")
 endif
 
 " egl.h
+" eglplatform.h
 if !exists ("c_opengl_no_egl")
 " EGL {{{
   " Data types {{{
@@ -5172,6 +5173,10 @@ if !exists ("c_opengl_no_egl")
   syntax keyword glType EGLDisplay
   syntax keyword glType EGLSurface
   syntax keyword glType EGLClientBuffer
+  syntax keyword glType EGLNativeDisplayType;
+  syntax keyword glType EGLNativePixmapType;
+  syntax keyword glType EGLNativeWindowType;
+  " EGL 1.2 types, renamed for consistency in EGL 1.3
   syntax keyword glType NativeDisplayType
   syntax keyword glType NativeWindowType
   syntax keyword glType NativePixmapType
